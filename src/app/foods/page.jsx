@@ -6,13 +6,13 @@ const getFoods = async () => {
     'https://taxi-kitchen-api.vercel.app/api/v1/foods/random'
   );
   const data = await res.json();
-  console.log(data);
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return data.foods || [];
 };
 
 const FoodsPage = async () => {
   const foods = await getFoods();
-  console.log(foods);
+
   return (
     <div>
       <h2 className="text-4xl font-bold">
