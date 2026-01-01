@@ -20,7 +20,7 @@ export const FoodCard = ({ food }) => {
 
         <div className="flex gap-3">
           <div className="flex-1">
-            <AddToCardBtn></AddToCardBtn>
+            <AddToCardBtn food={food}></AddToCardBtn>
           </div>
           <Link
             href={`/foods/${id}`}
