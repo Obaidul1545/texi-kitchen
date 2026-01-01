@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState } from 'react';
 
 const ReviewCard = ({ review }) => {
@@ -19,11 +20,20 @@ const ReviewCard = ({ review }) => {
     <div className="bg-white shadow-md rounded-2xl p-5">
       {/* header */}
       <div className="flex items-center gap-4 mb-3">
-        <img
+        {/* <img
           src={photo}
           alt={user}
           className="w-12 h-12 rounded-full object-cover"
+        /> */}
+
+        <Image
+          src={photo}
+          alt={user}
+          className="w-12 h-12 rounded-full object-cover"
+          height={50}
+          width={50}
         />
+
         <div>
           <h4 className="font-semibold">{user}</h4>
           <p className="text-sm text-gray-500">
