@@ -56,7 +56,6 @@ const FoodDetailsPage = async ({ params }) => {
           />
         </div>
 
-        {/* details */}
         <div>
           <h1 className="text-3xl font-bold mb-2">{title}</h1>
           <p className="text-gray-500 mb-1">Category: {category}</p>
